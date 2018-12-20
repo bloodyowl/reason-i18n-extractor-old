@@ -1,0 +1,16 @@
+{
+  "name": "i18n-extractor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "write-translations": "./lib/bs/native/write-translations"
+  },
+  "scripts": {
+    "start": "bsb -w",
+    "run-bin": "./lib/bs/native/write-translations"
+  },
+  "devDependencies": {
+    "bsb-native": "^4.0.7000"
+  }
+}

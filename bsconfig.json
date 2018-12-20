@@ -1,0 +1,21 @@
+{
+  "name": "i18n-extractor",
+  "version": "0.1.0",
+  "sources": {
+    "dir": "src",
+    "backend": ["native", "bytecode"],
+    "subdirs": true
+  },
+  "entries": [
+    {
+      "backend": "native",
+      "main-module": "Extractor",
+      "output-name": "write-translations"
+    }
+  ],
+  "ocamlfind-dependencies": ["reason", "yojson"],
+  "warnings": {
+    "error": "+101"
+  },
+  "refmt": 3
+}
