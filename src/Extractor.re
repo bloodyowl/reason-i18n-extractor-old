@@ -115,6 +115,7 @@ let main = () =>
 
     let oc = open_out(destinationFile);
     oc->output_string(Yojson.pretty_to_string(json));
+    oc->output_string("\n");
     close_out(oc);
   | _ => failwith("No destination file provided")
   };
